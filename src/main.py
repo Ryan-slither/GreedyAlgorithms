@@ -1,26 +1,32 @@
-import os
-
-from src.data import InputData, OutputData
-from src.generate import generate_test_input
+from src.algorithm import fifo, lru, optff
 from src.input_output import (
     read_input_file,
-    read_output_file,
-    write_input_file,
-    write_output_file,
 )
 
 if __name__ == "__main__":
-    print(read_input_file("data/input.in"))
-    print(read_output_file("data/output.in"))
+    # input1 = read_input_file("data/input.in")
 
-    output_file_name = "data/output_test.in"
-    write_output_file(output_file_name, OutputData(5, 5, 5))
-    print(read_output_file(output_file_name))
-    os.remove(output_file_name)
+    # fifo_result = fifo(input1)
+    # print(fifo_result)
 
-    input_file_name = "data/input_test.in"
-    write_input_file(input_file_name, InputData(5, 5, [5, 5, 5, 5, 5]))
-    print(read_input_file(input_file_name))
-    os.remove(input_file_name)
+    # lru_result = lru(input1)
+    # print(lru_result)
 
-    print(generate_test_input(6, 67, 10))
+    # optff_result = optff(input1)
+    # print(optff_result)
+
+    # input2 = read_input_file("data/input2.in")
+
+    # fifo_result = fifo(input2)
+    # print(fifo_result)
+
+    # lru_result = lru(input2)
+    # print(lru_result)
+
+    # optff_result = optff(input2)
+    # print(optff_result)
+
+    input3 = read_input_file("data/input3.in")
+
+    optff_result = optff(input3)
+    print(optff_result)
