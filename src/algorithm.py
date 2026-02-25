@@ -105,7 +105,7 @@ def optff(data: InputData) -> int:
     cache = set()
 
     for index, r in enumerate(data.requests):
-        print(cache)
+        # print(cache)
         nextOccurence[r] = nextReference[index]
 
         if r in cache:

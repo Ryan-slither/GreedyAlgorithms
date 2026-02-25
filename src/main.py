@@ -1,32 +1,23 @@
 from src.algorithm import fifo, lru, optff
-from src.input_output import (
-    read_input_file,
-)
+from src.generate import generate_test_input
+from src.input_output import OutputData, read_input_file, write_input_file
 
 if __name__ == "__main__":
-    # input1 = read_input_file("data/input.in")
+    # Question 1
+    # input1 = generate_test_input(10, 100, 15)
+    input1 = read_input_file("data/Q1Input1.in")
+    write_input_file("data/Q1Input1.in", input1)
+    output1 = OutputData(fifo(input1), lru(input1), optff(input1))
+    print(output1)
 
-    # fifo_result = fifo(input1)
-    # print(fifo_result)
+    # input2 = generate_test_input(10, 200, 15)
+    input2 = read_input_file("data/Q1Input2.in")
+    write_input_file("data/Q1Input2.in", input2)
+    output2 = OutputData(fifo(input2), lru(input2), optff(input2))
+    print(output2)
 
-    # lru_result = lru(input1)
-    # print(lru_result)
-
-    # optff_result = optff(input1)
-    # print(optff_result)
-
-    # input2 = read_input_file("data/input2.in")
-
-    # fifo_result = fifo(input2)
-    # print(fifo_result)
-
-    # lru_result = lru(input2)
-    # print(lru_result)
-
-    # optff_result = optff(input2)
-    # print(optff_result)
-
-    input3 = read_input_file("data/input3.in")
-
-    optff_result = optff(input3)
-    print(optff_result)
+    # input3 = generate_test_input(10, 400, 15)
+    input3 = read_input_file("data/Q1Input3.in")
+    write_input_file("data/Q1Input3.in", input3)
+    output3 = OutputData(fifo(input3), lru(input3), optff(input3))
+    print(output3)
