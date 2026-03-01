@@ -1,9 +1,7 @@
 from src.algorithm import fifo, lru, optff
-from src.generate import generate_test_input
 from src.input_output import (
     OutputData,
     read_input_file,
-    write_input_file,
     write_output_file,
 )
 

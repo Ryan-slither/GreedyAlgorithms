@@ -23,8 +23,7 @@ Ryan Froug 83197825
 | Q1Input2.in | 10  | 200 | 62   | 59  | 33    |
 | Q1Input3.in | 10  | 400 | 143  | 141 | 68    |
 
-OPTFF definitely has the least amount of misses. It seems like FIFO and LRU
-are quite similar in the number of misses, but LRU has a slightly lower miss rate.
+OPTFF has the least amount of misses. It seems like FIFO and LRU are quite similar in the number of misses, but LRU has a slightly lower miss rate.
 
 ### Question 2
 
